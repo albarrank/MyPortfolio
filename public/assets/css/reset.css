@@ -6,6 +6,13 @@ Teal: #00D0FF             brand color/ important stuff
 Darkish blue: #006880     accent color
 
 */
+/* Define css vars */
+
+element {
+    --main-bg-color : #003440;
+    --main-brand-color: #00D0FF;
+    --main-accent-color: #006880;
+}
 
 /* Styling starts off clean this way */
 * {
