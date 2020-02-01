@@ -1,0 +1,19 @@
+/*
+COLORS:
+
+Dark blue: #003440      background/text
+Teal: #00D0FF             brand color/ important stuff
+Darkish blue: #006880     accent color
+
+*/
+
+/* Styling starts off clean this way */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+}
