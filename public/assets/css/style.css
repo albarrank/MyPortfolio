@@ -8,3 +8,11 @@
     color: #ffffff;
     height: 100vh;
 }
+.about {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
