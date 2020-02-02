@@ -1,0 +1,10 @@
+.container {
+    overflow: hidden;
+    padding: 0 3rem;
+}
+
+.main {
+    background-color: var(--main-bg-color);
+    color: #ffffff;
+    height: 100vh;
+}
