@@ -8,7 +8,7 @@ Darkish blue: #006880     accent color
 */
 /* Define css vars */
 
-element {
+:root {
     --main-bg-color : #003440;
     --main-brand-color: #00D0FF;
     --main-accent-color: #006880;
