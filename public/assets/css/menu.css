@@ -1,7 +1,7 @@
 .menu-wrap {
     position:fixed;
-    top: 0;
-    right: 0;
+    top: 100px;
+    right: 25px;
     z-index: 1;
 }
 
@@ -11,8 +11,8 @@
     right: 0;
     z-index: 2;
     cursor: pointer;
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     opacity: 0;
 
 }
@@ -25,6 +25,7 @@
     width: 60px;
     height: 60px;
     padding: 1rem;
+    border-radius: 50%;
     background: var(--main-brand-color);
     display: flex;
     align-items: center;
@@ -77,6 +78,19 @@
     transform: rotate(225deg);
 }
 
+/* show menu */
+.menu-wrap .toggler:checked ~ .menu {
+    visibility: visible;
+}
+.menu-wrap .toggler:checked ~ .menu > div {
+    transform: scale(1);
+    transition-duration: scale 2s ease;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+    opacity: 1;
+    transition: opacity 0.1 ease;
+}
 .menu-wrap .menu {
     position: fixed;
     top: 0;
@@ -92,7 +106,7 @@
 
 .menu-wrap .menu > div  {
     background: var(--main-brand-color);
-    border-radius: 50%;
+    border-radius: 25%;
     width:200vw;
     height:200vh;
     display: flex;
@@ -113,12 +127,16 @@
 .menu-wrap .menu > div > div > ul > li {
     list-style: none;
     color: #fff;
-    font-size:  1.5rem;
+    font-size:  2rem;
     padding: 1rem;
 }
 
 .menu-wrap .menu > div > div > ul > li > a{
     color: inherit;
     text-decoration: none;
+    transition: color 0.4s ease;
+}
+.menu-wrap .menu > div > div > ul > li > a:hover{
+    color: var(--main-bg-color);
     transition: color 0.4s ease;
 }
