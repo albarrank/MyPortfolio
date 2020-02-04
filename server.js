@@ -14,6 +14,10 @@ app.get("/", function(req, res) {
 	res.render("pages/index");
 });
 
+app.get("/portfolio", function(req, res) {
+	res.render("pages/portfolio");
+});
+
 app.listen(PORT, function() {
 	console.log("server is listening on port:", PORT);
 });

@@ -1,14 +1,17 @@
+body {
+    background-color: var(--main-bg-color);
+}
 .container {
     overflow: hidden;
     padding: 0 3rem;
 }
 
 .main {
-    background-color: var(--main-bg-color);
     color: #ffffff;
     height: 100vh;
 }
-.about {
+
+.landing {
     display: flex;
     flex-direction: column;
     align-content: center;
