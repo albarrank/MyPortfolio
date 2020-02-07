@@ -1,3 +1,6 @@
+.nav {
+    display: block;
+}
 .menu-wrap {
     position:fixed;
     top: 100px;
