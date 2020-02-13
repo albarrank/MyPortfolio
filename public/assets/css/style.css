@@ -4,9 +4,10 @@ body {
 }
 .container {
     overflow: hidden;
-    padding: 0 3rem;
+    padding: 0 1rem;
 }
 
+/* hold all the content except navbar */
 .main {
     color: #ffffff;
     height: 100vh;
@@ -20,4 +21,26 @@ body {
     justify-content: center;
     text-align: center;
     height: 100vh;
+}
+/* General styling for about me section */
+.about-wrapper{
+    height: 100%;
+    margin-top: 200px;
+    padding-top:  6rem;
+}
+
+/* About me styling */
+.about-me {
+    border: var(--main-accent-color) 1px;
+    border-radius: 5%;
+    border-style: inset;
+    margin: 0;
+}
+.about-me > div {
+    padding:10px;
+}
+
+/* Skills styling */
+.skills {
+    margin-top: 200px;
 }
