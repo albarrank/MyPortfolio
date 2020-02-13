@@ -7,7 +7,7 @@ body {
     padding: 0 1rem;
 }
 
-/* hold all the content except navbar */
+/* Holds all the content except navbar */
 .main {
     color: #ffffff;
     height: 100vh;
@@ -25,8 +25,7 @@ body {
 /* General styling for about me section */
 .about-wrapper{
     height: 100%;
-    margin-top: 200px;
-    padding-top:  6rem;
+    padding-top:  14rem;
 }
 
 /* About me styling */
@@ -35,12 +34,23 @@ body {
     border-radius: 5%;
     border-style: inset;
     margin: 0;
+    padding: 2rem;
 }
-.about-me > div {
-    padding:10px;
-}
+
 
 /* Skills styling */
 .skills {
-    margin-top: 200px;
+    border: var(--main-accent-color) 1px;
+    border-radius: 5%;
+    border-style: outset;
+    margin: 0;
+    margin-top: 20rem;
+    padding: 1rem;
+}
+
+.skills > h1 {
+    padding-bottom:5rem;
+}
+.front {
+    padding-bottom: 2.5rem;
 }
