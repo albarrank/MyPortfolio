@@ -7,6 +7,7 @@ body {
     padding: 0 1rem;
 }
 
+
 /* Holds all the content except navbar */
 .main {
     color: #ffffff;
@@ -15,6 +16,7 @@ body {
 
 /* Styling for landing page (what users first see) */
 .landing {
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -22,10 +24,14 @@ body {
     text-align: center;
     height: 100vh;
 }
+
 /* General styling for about me section */
 .about-wrapper{
     height: 100%;
     padding-top:  14rem;
+}
+.about-wrapper h1 {
+    color: var(--main-brand-color);
 }
 
 /* About me styling */
