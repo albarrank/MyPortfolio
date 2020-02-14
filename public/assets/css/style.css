@@ -41,17 +41,19 @@ h1 {
 .about-me {
     border: var(--main-accent-color) 1px;
     border-radius: 5%;
-    border-style: inset;
+    border-style: solid;
     margin: 0;
     padding: 2rem;
 }
-
+.about-me > div > h1 {
+    padding-bottom:5rem;
+}
 
 /* Skills styling */
 .skills {
     border: var(--main-accent-color) 1px;
     border-radius: 5%;
-    border-style: outset;
+    border-style: solid;
     margin: 0;
     margin-top: 20rem;
     padding: 1rem;
