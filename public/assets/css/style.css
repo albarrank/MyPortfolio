@@ -1,70 +1,88 @@
 body {
-    background-color: var(--main-bg-color);
-    font-family: 'Montserrat', sans-serif;
+	background-color: var(--main-bg-color);
+	font-family: "Montserrat", sans-serif;
 }
 .container {
-    overflow: hidden;
-    padding: 0 1rem;
+	overflow: hidden;
+	padding: 0 1rem;
 }
 h1 {
-    color: var(--main-brand-color);
+	color: var(--main-brand-color);
 }
 
-/* Holds all the content except navbar */
 .main {
-    color: #ffffff;
-    height: 100vh;
+	color: #ffffff;
+	height: 100vh;
+}
+
+/* General styling for sections */
+.about-wrapper,
+.portfolio-wrapper {
+    height: 100%;
+    padding-top: 15rem;
+    padding-bottom: 8rem;
 }
 
 /* Styling for landing page (what users first see) */
 .landing {
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-    height: 100vh;
+	color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+	height: 100vh;
 }
-.landing h1{
-    color: #ffffff;
-}
-
-/* General styling for sections */
-.about-wrapper, .portfolio-wrapper {
-    height: 100%;
-    padding-top:  14rem;
+.landing h1 {
+	color: #ffffff;
 }
 
 
 /* About me section styling */
 .about-me {
-    border: var(--main-accent-color) 1px;
-    border-radius: 5%;
-    border-style: solid;
-    margin: 0;
-    padding: 2rem;
+	border: var(--main-accent-color) 1px;
+	border-radius: 5%;
+	border-style: solid;
+	margin: 0;
+	padding: 2rem;
 }
 .about-me > div > h1 {
-    padding-bottom:5rem;
+	padding-bottom: 5rem;
 }
 
 /* Skills styling */
 .skills {
-    border: var(--main-accent-color) 1px;
-    border-radius: 5%;
-    border-style: solid;
-    margin: 0;
-    margin-top: 20rem;
-    padding: 1rem;
+	border: var(--main-accent-color) 1px;
+	border-radius: 5%;
+	border-style: solid;
+	margin: 0;
+	margin-top: 20rem;
+	padding: 1rem;
 }
 
 .skills > h1 {
-    padding-bottom:5rem;
+	padding-bottom: 5rem;
 }
 
 .front {
-    padding-bottom: 2.5rem;
+	padding-bottom: 2.5rem;
 }
 
 /* Portfolio section styling */
+.project-image {
+    width:100%;
+    height: 250px;
+    background-color: white;
+}
+
+button {
+    height: 70px;
+    width: 70px;
+    border-radius: 10%;
+    border-style: none;
+    background-color: var(--main-brand-color);
+}
+
+button i {
+    font-size: 2rem;
+}
