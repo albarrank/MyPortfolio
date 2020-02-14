@@ -6,7 +6,9 @@ body {
     overflow: hidden;
     padding: 0 1rem;
 }
-
+h1 {
+    color: var(--main-brand-color);
+}
 
 /* Holds all the content except navbar */
 .main {
@@ -24,17 +26,18 @@ body {
     text-align: center;
     height: 100vh;
 }
+.landing h1{
+    color: #ffffff;
+}
 
-/* General styling for about me section */
-.about-wrapper{
+/* General styling for sections */
+.about-wrapper, .portfolio-wrapper {
     height: 100%;
     padding-top:  14rem;
 }
-.about-wrapper h1 {
-    color: var(--main-brand-color);
-}
 
-/* About me styling */
+
+/* About me section styling */
 .about-me {
     border: var(--main-accent-color) 1px;
     border-radius: 5%;
@@ -57,6 +60,9 @@ body {
 .skills > h1 {
     padding-bottom:5rem;
 }
+
 .front {
     padding-bottom: 2.5rem;
 }
+
+/* Portfolio section styling */
