@@ -69,11 +69,38 @@ h1 {
 }
 
 /* Portfolio section styling */
+.portfolio-wrapper h1 {
+    margin-bottom: 10rem;
+    margin-left: 1rem;
+}
 .project-image {
+    position: relative;
     width:100%;
     height: 250px;
     background-color: white;
+    z-index: 1;
+    transition: ease background-color 500ms;
 }
+.project-image:hover {
+    background-color: rgb(26, 212, 196);
+}
+/* 
+    change buttons position based of hover but can't click the buttons
+    going to test it with basing it off of the scroll position
+*/
+.project-image:hover ~ .source-code {
+    top: -100px;
+}
+.project-image:hover ~ .live-project {
+    bottom: -100px;
+
+}
+/* .test-up {
+    top: -100px;
+}
+.test-down {
+    bottom: -100px;
+} */
 
 button {
     height: 70px;
@@ -82,7 +109,22 @@ button {
     border-style: none;
     background-color: var(--main-brand-color);
 }
-
 button i {
     font-size: 2rem;
 }
+
+.live-project {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    z-index: 0;
+    transition: ease bottom 1s;
+}
+.source-code {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    z-index: 0;
+    transition: ease top 1s;
+}
+
