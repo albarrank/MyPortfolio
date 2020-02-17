@@ -57,7 +57,7 @@ h1 {
 	border-style: solid;
 	margin: 0;
 	margin-top: 20rem;
-	padding: 1rem;
+	padding: 2rem;
 }
 
 .skills > h1 {
@@ -70,7 +70,7 @@ h1 {
 
 /* Portfolio section styling */
 .portfolio-wrapper h1 {
-    margin-bottom: 10rem;
+    margin-bottom: 11rem;
     margin-left: 1rem;
 }
 .project-image {
@@ -84,23 +84,21 @@ h1 {
 .project-image:hover {
     background-color: rgb(26, 212, 196);
 }
-/* 
-    change buttons position based of hover but can't click the buttons
-    going to test it with basing it off of the scroll position
-*/
-.project-image:hover ~ .source-code {
-    top: -100px;
-}
-.project-image:hover ~ .live-project {
-    bottom: -100px;
 
-}
-/* .test-up {
+.button-up {
+    position: absolute;
     top: -100px;
+    left: 15px;
+    z-index: 0;
+    transition: ease top 1s;
 }
-.test-down {
+.button-down {
+    position: absolute;
     bottom: -100px;
-} */
+    right: 15px;
+    z-index: 0;
+    transition: ease bottom 1s;
+}
 
 button {
     height: 70px;
@@ -109,6 +107,7 @@ button {
     border-style: none;
     background-color: var(--main-brand-color);
 }
+
 button i {
     font-size: 2rem;
 }
@@ -127,4 +126,11 @@ button i {
     z-index: 0;
     transition: ease top 1s;
 }
+.btn-outline-primary {
+    border-color: var(--main-brand-color);
+    color: var(--main-brand-color);
+}
 
+.btn-outline-primary:hover {
+    background-color: var(--main-brand-color);
+}
