@@ -3,14 +3,18 @@ $(document).ready(() => {
 		$(".toggler").click();
 	});
 
-	$(".project-image").on("click", function() {
-		let codeButton = $("#sourceCode");
-		let liveButton = $("#liveProject");
+	$(".project-card").on("click", function() {
+		let $this = $(this);
 
-		codeButton.toggleClass("source-code");
-		codeButton.toggleClass("button-up");
+		let $sourceCode = $this[0].children[1];
+		let $liveProject = $this[0].children[2];
 
-		liveButton.toggleClass("live-project");
-		liveButton.toggleClass("button-down");
+		console.log($sourceCode, $liveProject);
+
+		$sourceCode.classList.toggle("source-code");
+		$sourceCode.classList.toggle("button-up");
+
+		$liveProject.classList.toggle("live-project");
+		$liveProject.classList.toggle("button-down");
 	});
 });

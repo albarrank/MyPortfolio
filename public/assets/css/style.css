@@ -18,9 +18,9 @@ h1 {
 /* General styling for sections */
 .about-wrapper,
 .portfolio-wrapper {
-    height: 100%;
-    padding-top: 15rem;
-    padding-bottom: 8rem;
+	height: 100%;
+	padding-top: 15rem;
+	padding-bottom: 8rem;
 }
 
 /* Styling for landing page (what users first see) */
@@ -36,7 +36,6 @@ h1 {
 .landing h1 {
 	color: #ffffff;
 }
-
 
 /* About me section styling */
 .about-me {
@@ -70,67 +69,119 @@ h1 {
 
 /* Portfolio section styling */
 .portfolio-wrapper h1 {
-    margin-bottom: 11rem;
-    margin-left: 1rem;
+	margin-bottom: 3rem;
+	margin-left: 1rem;
 }
-.project-image {
-    position: relative;
-    width:100%;
-    height: 250px;
-    background-color: white;
-    z-index: 1;
-    transition: ease background-color 500ms;
+.project-card {
+    margin-top:8rem;
+}
+/* .project-image {
+	position: relative;
+	width: 100%;
+	height: 250px;
+	background: url("../images/billsplit.png");
+	z-index: 1;
+	transition: ease background-color 500ms;
 }
 .project-image:hover {
-    background-color: rgb(26, 212, 196);
-}
+	background-color: rgb(26, 212, 196);
+} */
 
+/* Button styling */
 .button-up {
-    position: absolute;
-    top: -100px;
-    left: 15px;
-    z-index: 0;
-    transition: ease top 1s;
+	position: absolute;
+	top: -100px;
+	left: 15px;
+	z-index: 0;
+	transition: ease top 1s;
 }
 .button-down {
-    position: absolute;
-    bottom: -100px;
-    right: 15px;
-    z-index: 0;
-    transition: ease bottom 1s;
+	position: absolute;
+	bottom: -100px;
+	right: 15px;
+	z-index: 0;
+	transition: ease bottom 1s;
 }
 
 button {
-    height: 70px;
-    width: 70px;
-    border-radius: 10%;
-    border-style: none;
-    background-color: var(--main-brand-color);
+	height: 70px;
+	width: 70px;
+	border-radius: 10%;
+	border-style: none;
+	background-color: var(--main-brand-color);
 }
 
 button i {
-    font-size: 2rem;
+	font-size: 2rem;
 }
 
 .live-project {
-    position: absolute;
-    bottom: 0;
-    right: 15px;
-    z-index: 0;
-    transition: ease bottom 1s;
+	position: absolute;
+	bottom: 0;
+	right: 15px;
+	z-index: 0;
+	transition: ease bottom 1s;
 }
 .source-code {
-    position: absolute;
-    top: 0;
-    left: 15px;
-    z-index: 0;
-    transition: ease top 1s;
+	position: absolute;
+	top: 0;
+	left: 15px;
+	z-index: 0;
+	transition: ease top 1s;
 }
 .btn-outline-primary {
-    border-color: var(--main-brand-color);
-    color: var(--main-brand-color);
+	border-color: var(--main-brand-color);
+	color: var(--main-brand-color);
 }
 
 .btn-outline-primary:hover {
-    background-color: var(--main-brand-color);
+	background-color: var(--main-brand-color);
 }
+/* Main container */
+.overlay-image {
+	position: relative;
+    width: 100%;
+    z-index: 1;
+}
+/* Original image */
+.overlay-image .image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+/* Original text overlay */
+.overlay-image .text {
+	color: #fff;
+	font-size: 30px;
+	line-height: 1.5em;
+	text-shadow: 2px 2px 2px #000;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+/* New overlay on hover */
+.overlay-image .hover {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: 0.5s ease;
+}
+/* New overlay appearance on hover */
+.overlay-image:hover .hover {
+	opacity: 1;
+}
+/********* Background and text only overlay on hover *******/
+.overlay-image .normal {
+    transition: .5s ease;
+   }
+   .overlay-image:hover .normal {
+    opacity: 0;
+   }
+   .overlay-image .hover {
+    background-color: rgba(0,0,0,0.5);
+   }
