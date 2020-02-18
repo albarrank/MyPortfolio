@@ -1,7 +1,9 @@
 const express = require("express");
 const app = express();
-const pageRoutes = require("./routes/htmlRoutes");
 const PORT = process.env.PORT || 5000;
+
+const pageRoutes = require("./routes/htmlRoutes");
+const apiRoutes = require("./routes/apiRoutes");
 
 // initialize express to use ejs as view
 app.set("view engine", "ejs");
@@ -13,8 +15,9 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// renders index page for ejs
+// routes used for website
 app.use("/", pageRoutes);
+app.use("/api", apiRoutes);
 
 app.listen(PORT, () => {
 	console.log("server is listening on port:", PORT);

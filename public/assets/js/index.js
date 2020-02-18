@@ -19,12 +19,41 @@ $(document).ready(() => {
 	$("#sendEmail").on("click", (e) => {
 		e.preventDefault();
 		const formData = getData();
-		console.log(formData);
+
+		apiCall(formData);
 	});
+
+	function apiCall(formData) {
+		const options = {
+			method: "POST",
+			headers: { "Content-Type": "application/json" },
+			body: JSON.stringify(formData)
+		};
+
+		const checkForError = (response) => {
+			if (!response.ok) throw Error(response.statusText);
+			return response.json();
+		};
+
+		fetch("/api/email", options)
+			.then(checkForError)
+			.then((data) => {
+				console.log(data);
+			})
+			.catch((error) => {
+				console.log(error);
+			});
+	}
 
 	function getData() {
 		const name = $("#name").val();
 		const email = $("#email").val();
 		const message = $("#message").val();
+
+		return {
+			name,
+			email,
+			message
+		};
 	}
 });
