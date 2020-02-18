@@ -17,7 +17,8 @@ h1 {
 
 /* General styling for sections */
 .about-wrapper,
-.portfolio-wrapper {
+.portfolio-wrapper,
+.contact-wrapper {
 	height: 100%;
 	padding-top: 15rem;
 	padding-bottom: 8rem;
@@ -136,6 +137,12 @@ button i {
 
 .btn-outline-primary:hover {
 	background-color: var(--main-brand-color);
+}
+.btn-outline-primary.focus, .btn-outline-primary:focus {
+    box-shadow: none;
+}
+.btn.focus, .btn:focus {
+    box-shadow: none;
 }
 /* Main container */
 .overlay-image {
