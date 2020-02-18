@@ -18,8 +18,13 @@ $(document).ready(() => {
 
 	$("#sendEmail").on("click", (e) => {
 		e.preventDefault();
-
-		const formData = new FormData(this);
+		const formData = getData();
 		console.log(formData);
 	});
+
+	function getData() {
+		const name = $("#name").val();
+		const email = $("#email").val();
+		const message = $("#message").val();
+	}
 });
