@@ -15,4 +15,11 @@ $(document).ready(() => {
 		$liveProject.classList.toggle("live-project");
 		$liveProject.classList.toggle("button-down");
 	});
+
+	$("#sendEmail").on("click", (e) => {
+		e.preventDefault();
+
+		const formData = new FormData(this);
+		console.log(formData);
+	});
 });
