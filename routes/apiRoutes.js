@@ -24,19 +24,35 @@ router.post("/email", (req, res) => {
 	const email = body.email;
 	const message = body.message;
 
-	const content = `<h1>name:</h1> <h4>${name}</h4> \n <h1>email:</h1> <h4>${email}</h4> \n <h1>message:</h1> <h4>${message}</h4> `;
+	let validEmail = validateEmail(email);
 
-	let mailOptions = {
-		from: name,
-		to: "kevthedev365@gmail.com",
-		subject: "New Message from contact form",
-		html: content
-	};
+	if (validEmail) {
+		const content = `<h1>name:</h1> <h4>${name}</h4> \n <h1>email:</h1> <h4>${email}</h4> \n <h1>message:</h1> <h4>${message}</h4> `;
 
-	transporter.sendMail(mailOptions, (err, data) => {
-		if (err) console.log("error occured");
-		else console.log("message sent");
-	});
+		let mailOptions = {
+			from: name,
+			to: "kevthedev365@gmail.com",
+			subject: "New Message from contact form",
+			html: content
+		};
+
+		transporter.sendMail(mailOptions, (err, data) => {
+			if (err) console.log("error occured");
+			else console.log("message sent");
+		});
+		res.json({
+			msg: "Email Sent!"
+		});
+	} else
+		res.json({
+			msg: "Email is Invalid!"
+		});
 });
+
+function validateEmail(email) {
+	if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+		return true;
+	} else return false;
+}
 
 module.exports = router;

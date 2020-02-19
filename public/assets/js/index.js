@@ -38,7 +38,7 @@ $(document).ready(() => {
 		fetch("/api/email", options)
 			.then(checkForError)
 			.then((message) => {
-				console.log(message);
+				alert(message.msg);
 			})
 			.catch((error) => {
 				console.log(error);
