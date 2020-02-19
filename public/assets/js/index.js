@@ -21,7 +21,12 @@ $(document).ready(() => {
 		const formData = getData();
 
 		apiCall(formData);
+		resetForm();
 	});
+
+	function resetForm() {
+		$("#form").trigger("reset");
+	}
 
 	function apiCall(formData) {
 		const options = {

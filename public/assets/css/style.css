@@ -24,8 +24,9 @@ h1 {
 	padding-bottom: 8rem;
 }
 .footer-wrapper {
-	height: 100px;
+	height: 100%;
 	margin-top: 15rem;
+	color: var(--main-bg-color);
 	background-color: var(--main-brand-color);
 }
 
@@ -73,118 +74,26 @@ h1 {
 	padding-bottom: 2.5rem;
 }
 
-/* Portfolio section styling */
-.portfolio-wrapper h1 {
-	margin-bottom: 3rem;
-	margin-left: 1rem;
+/* Footer styling */
+.footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-content: center;
 }
-.project-card {
-	margin-top: 8rem;
+.footer > div {
+	margin-top: 2rem;
 }
-
-/* Button styling */
-.button-up {
-	position: absolute;
-	top: -100px;
-	left: 15px;
-	z-index: 0;
-	transition: ease top 1s;
-}
-.button-down {
-	position: absolute;
-	bottom: -100px;
-	right: 15px;
-	z-index: 0;
-	transition: ease bottom 1s;
-}
-
-button {
-	height: 70px;
-	width: 70px;
-	border-radius: 10%;
-	border-style: none;
-	background-color: var(--main-brand-color);
-}
-
-button i {
-	font-size: 2rem;
-}
-
-.live-project {
-	position: absolute;
-	bottom: 0;
-	right: 15px;
-	z-index: 0;
-	transition: ease bottom 1s;
-}
-.source-code {
-	position: absolute;
-	top: 0;
-	left: 15px;
-	z-index: 0;
-	transition: ease top 1s;
-}
-.btn-outline-primary {
-	border-color: var(--main-brand-color);
-	color: var(--main-brand-color);
-}
-
-.btn-outline-primary:hover {
-	background-color: var(--main-brand-color);
-}
-.btn-outline-primary.focus,
-.btn-outline-primary:focus {
-	box-shadow: none;
-}
-.btn.focus,
-.btn:focus {
-	box-shadow: none;
-}
-/* Main container */
-.overlay-image {
-	position: relative;
-	width: 100%;
-	z-index: 1;
-}
-/* Original image */
-.overlay-image .image {
-	display: block;
-	width: 100%;
-	height: auto;
-}
-/* Original text overlay */
-.overlay-image .text {
-	color: #fff;
-	font-size: 30px;
-	line-height: 1.5em;
-	text-shadow: 2px 2px 2px #000;
+.copyright {
 	text-align: center;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 100%;
+	margin-top: 2rem;
 }
-/* New overlay on hover */
-.overlay-image .hover {
-	position: absolute;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	transition: 0.5s ease;
+.copyright > p {
+	margin: 0;
 }
-/* New overlay appearance on hover */
-.overlay-image:hover .hover {
-	opacity: 1;
+.fa-github-square {
+	font-size: 64px;
 }
-/********* Background and text only overlay on hover *******/
-.overlay-image .normal {
-	transition: 0.5s ease;
-}
-.overlay-image:hover .normal {
-	opacity: 0;
-}
-.overlay-image .hover {
-	background-color: rgba(0, 0, 0, 0.5);
+.fa-linkedin {
+	font-size: 64px;
 }
