@@ -23,6 +23,11 @@ h1 {
 	padding-top: 15rem;
 	padding-bottom: 8rem;
 }
+.footer-wrapper {
+	height: 100px;
+	margin-top: 15rem;
+	background-color: var(--main-brand-color);
+}
 
 /* Styling for landing page (what users first see) */
 .landing {
@@ -74,19 +79,8 @@ h1 {
 	margin-left: 1rem;
 }
 .project-card {
-    margin-top:8rem;
+	margin-top: 8rem;
 }
-/* .project-image {
-	position: relative;
-	width: 100%;
-	height: 250px;
-	background: url("../images/billsplit.png");
-	z-index: 1;
-	transition: ease background-color 500ms;
-}
-.project-image:hover {
-	background-color: rgb(26, 212, 196);
-} */
 
 /* Button styling */
 .button-up {
@@ -138,17 +132,19 @@ button i {
 .btn-outline-primary:hover {
 	background-color: var(--main-brand-color);
 }
-.btn-outline-primary.focus, .btn-outline-primary:focus {
-    box-shadow: none;
+.btn-outline-primary.focus,
+.btn-outline-primary:focus {
+	box-shadow: none;
 }
-.btn.focus, .btn:focus {
-    box-shadow: none;
+.btn.focus,
+.btn:focus {
+	box-shadow: none;
 }
 /* Main container */
 .overlay-image {
 	position: relative;
-    width: 100%;
-    z-index: 1;
+	width: 100%;
+	z-index: 1;
 }
 /* Original image */
 .overlay-image .image {
@@ -184,11 +180,11 @@ button i {
 }
 /********* Background and text only overlay on hover *******/
 .overlay-image .normal {
-    transition: .5s ease;
-   }
-   .overlay-image:hover .normal {
-    opacity: 0;
-   }
-   .overlay-image .hover {
-    background-color: rgba(0,0,0,0.5);
-   }
+	transition: 0.5s ease;
+}
+.overlay-image:hover .normal {
+	opacity: 0;
+}
+.overlay-image .hover {
+	background-color: rgba(0, 0, 0, 0.5);
+}

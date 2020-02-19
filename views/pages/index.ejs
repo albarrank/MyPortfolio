@@ -6,13 +6,17 @@
 	<body>
 		<%- include("../partials/nav/nav") %>
 
-		<main data-spy="scroll" data-target="test" data-offset="100" class="main">
+		<main
+			data-spy="scroll"
+			data-target="test"
+			data-offset="100"
+			class="main"
+		>
 			<div class="container">
-				
 				<div class="landing">
 					<h1>Hey I'm Kevin and I <span id="typed"></span></h1>
 				</div>
-				
+
 				<div id="about">
 					<div class="about-wrapper">
 						<%- include("../partials/sections/about.ejs") %>
@@ -29,6 +33,11 @@
 					<div class="contact-wrapper">
 						<%- include("../partials/sections/contact.ejs") %>
 					</div>
+				</div>
+			</div>
+			<div>
+				<div class="footer-wrapper">
+					<%- include("../partials/sections/footer.ejs") %>
 				</div>
 			</div>
 		</main>
