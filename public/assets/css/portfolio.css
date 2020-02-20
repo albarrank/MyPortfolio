@@ -24,7 +24,7 @@
 	transition: ease bottom 1s;
 }
 
-button {
+a {
 	height: 70px;
 	width: 70px;
 	border-radius: 10%;
@@ -32,7 +32,7 @@ button {
 	background-color: var(--main-brand-color);
 }
 
-button i {
+a i {
 	font-size: 2rem;
 }
 
@@ -51,6 +51,10 @@ button i {
 	transition: ease top 1s;
 }
 .btn-outline-primary {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
 	border-color: var(--main-brand-color);
 	color: var(--main-brand-color);
 }
@@ -80,7 +84,7 @@ button i {
 }
 /* Original text overlay */
 .overlay-image .text {
-	color: #fff;
+	color: var(--main-brand-color);
 	font-size: 30px;
 	line-height: 1.5em;
 	text-shadow: 2px 2px 2px #000;
@@ -112,5 +116,5 @@ button i {
 	opacity: 0;
 }
 .overlay-image .hover {
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.61);
 }
