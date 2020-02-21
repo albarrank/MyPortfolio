@@ -1,17 +1,16 @@
+require("dotenv").config();
 const express = require("express");
 const router = express.Router();
 
 const nodeMailer = require("nodemailer");
-// const creds = require("../config/config");
 
 let transporter = nodeMailer.createTransport({
 	host: "smtp.gmail.com",
 	auth: {
-		user: creds.USER,
-		pass: creds.PASS
+		user: process.env.EMAIL_USER,
+		pass: process.env.EMAIL_PASS
 	}
 });
-
 transporter.verify((err) => {
 	if (err) console.log(err);
 	else console.log("Server is ready to take emails");
