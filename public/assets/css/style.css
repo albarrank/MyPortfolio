@@ -21,7 +21,7 @@ h1 {
 .contact-wrapper {
 	height: 100%;
 	padding-top: 15rem;
-	padding-bottom: 8rem;
+	padding-bottom: 15rem;
 }
 .footer-wrapper {
 	height: 100%;
@@ -29,6 +29,7 @@ h1 {
 	color: var(--main-bg-color);
 	background-color: var(--main-brand-color);
 }
+
 
 /* Styling for landing page (what users first see) */
 .landing {
@@ -96,4 +97,11 @@ h1 {
 }
 .fa-linkedin {
 	font-size: 64px;
+}
+
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+	.contact-wrapper {
+		padding: 15rem;
+	}
 }

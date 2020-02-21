@@ -9,8 +9,6 @@ $(document).ready(() => {
 		let $sourceCode = $this[0].children[1];
 		let $liveProject = $this[0].children[2];
 
-		console.log($this[0]);
-
 		$sourceCode.classList.toggle("source-code");
 		$sourceCode.classList.toggle("button-up");
 
