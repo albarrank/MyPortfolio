@@ -1,4 +1,3 @@
-
 /* Portfolio section styling */
 .portfolio-wrapper h1 {
 	margin-bottom: 3rem;
@@ -47,6 +46,18 @@ a i {
 	z-index: 0;
 	transition: ease top 1s;
 }
+.btn:active {
+	background-color: var(--main-bg-color) !important;
+	color: #ffffff !important;
+	border-color: var(--main-brand-color) !important;
+	box-shadow: none !important;
+}
+.btn-outline-primary:active {
+	background-color: var(--main-brand-color) !important;
+	color: var(--main-bg-color) !important;
+	box-shadow: none !important;
+}
+
 .btn-outline-primary {
 	display: flex;
 	flex-direction: column;
@@ -56,7 +67,8 @@ a i {
 	color: var(--main-brand-color);
 }
 
-.btn-outline-primary:hover, .resume-button:hover {
+.btn-outline-primary:hover,
+.resume-button:hover {
 	background-color: var(--main-accent-color);
 	border-color: var(--main-brand-color);
 }

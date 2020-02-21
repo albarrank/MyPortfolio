@@ -70,13 +70,10 @@ h1 {
 	flex-direction: column;
 	justify-content: center;
 	align-content: center;
+	color: var(--main-bg-color);
 	background-color: var(--main-brand-color);
 	border-color: var(--main-accent-color);
 }
-/* .resume-button:hover {
-	background-color: var(--main-accent-color);
-	border-color: var(--main-brand-color);
-} */
 
 .skills {
 	border: var(--main-accent-color) 1px;
