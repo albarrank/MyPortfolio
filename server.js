@@ -1,11 +1,14 @@
 const express = require("express");
 const app = express();
+const path = require("path");
+
 const PORT = process.env.PORT || 5000;
 
 const pageRoutes = require("./routes/htmlRoutes");
 const apiRoutes = require("./routes/apiRoutes");
 
-// initialize express to use ejs as viewss
+// initialize express to use ejs as views
+app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
 // sets public to be default for all links in html
