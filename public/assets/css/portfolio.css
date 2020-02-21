@@ -56,8 +56,9 @@ a i {
 	color: var(--main-brand-color);
 }
 
-.btn-outline-primary:hover {
-	background-color: var(--main-brand-color);
+.btn-outline-primary:hover, .resume-button:hover {
+	background-color: var(--main-accent-color);
+	border-color: var(--main-brand-color);
 }
 .btn-outline-primary.focus,
 .btn-outline-primary:focus {
