@@ -5,16 +5,18 @@ const router = express.Router();
 const nodeMailer = require("nodemailer");
 
 let transporter = nodeMailer.createTransport({
-	host: "smtp.gmail.com",
-	secure: true,
+	service: "Gmail",
 	auth: {
 		user: process.env.EMAIL_USER,
 		pass: process.env.EMAIL_PASS
-	}
+	},
+	maxConnections: 50,
+	maxMessages: 100
 });
+let checkErr;
 transporter.verify((err) => {
-	if (err) console.log(err);
-	else console.log("Server is ready to take emails");
+	if (err) checkErr = err;
+	else checkErr = "No error";
 });
 
 router.post("/email", (req, res) => {
@@ -32,11 +34,13 @@ router.post("/email", (req, res) => {
 		activateNodeMailer(name, content);
 
 		res.json({
-			msg: "Email Sent!"
+			msg: "Email Sent!",
+			errTest: checkErr
 		});
 	} else
 		res.json({
-			msg: "Email is Invalid!"
+			msg: "Email is Invalid!",
+			errTest: checkErr
 		});
 });
 
