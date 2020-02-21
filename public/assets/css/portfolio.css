@@ -24,12 +24,9 @@
 	transition: ease bottom 1s;
 }
 
-a {
+.project-card a {
 	height: 70px;
 	width: 70px;
-	border-radius: 10%;
-	border-style: none;
-	background-color: var(--main-brand-color);
 }
 
 a i {

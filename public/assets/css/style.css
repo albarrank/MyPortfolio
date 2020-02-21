@@ -30,7 +30,6 @@ h1 {
 	background-color: var(--main-brand-color);
 }
 
-
 /* Styling for landing page (what users first see) */
 .landing {
 	color: #ffffff;
@@ -56,8 +55,29 @@ h1 {
 .about-me > div > h1 {
 	padding-bottom: 5rem;
 }
+.resume {
+	margin-top: 20rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+}
+.resume-button {
+	height: 80px;
+	width: 160px;
+	font-size: 1.7rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	background-color: var(--main-brand-color);
+	border-color: var(--main-accent-color);
+}
+.resume-button:hover {
+	background-color: var(--main-accent-color);
+	border-color: var(--main-brand-color);
+}
 
-/* Skills styling */
 .skills {
 	border: var(--main-accent-color) 1px;
 	border-radius: 5%;
@@ -82,8 +102,9 @@ h1 {
 	justify-content: space-evenly;
 	align-content: center;
 }
-.footer > div {
+.footer > a {
 	margin-top: 2rem;
+	color: var(--main-bg-color);
 }
 .copyright {
 	text-align: center;
@@ -98,7 +119,6 @@ h1 {
 .fa-linkedin {
 	font-size: 64px;
 }
-
 
 @media (min-width: 1024px) and (max-width: 1440px) {
 	.contact-wrapper {
