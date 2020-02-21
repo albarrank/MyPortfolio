@@ -13,8 +13,6 @@ let transporter = nodeMailer.createTransport({
 	maxConnections: 50,
 	maxMessages: 100
 });
-// error var for the client side
-let checkErr;
 transporter.verify((err) => {
 	if (err) checkErr = err;
 	else checkErr = "No error";

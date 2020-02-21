@@ -44,7 +44,7 @@ $(document).ready(() => {
 			.then(checkForError)
 			.then((message) => {
 				alert(message.msg);
-				console.log(message.errTest);
+				// console.log(message.errTest);
 			})
 			.catch((error) => {
 				console.log(error);
