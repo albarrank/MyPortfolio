@@ -56,11 +56,16 @@ h1 {
 	padding-bottom: 5rem;
 }
 .resume {
-	margin-top: 20rem;
+	position: relative;
+	margin-top: 2rem;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-content: center;
+	bottom: -70px;
+}
+.resume p {
+	margin: 0;
 }
 .resume-button {
 	height: 80px;
