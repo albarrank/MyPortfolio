@@ -1,7 +1,7 @@
 /* Portfolio section styling */
 .portfolio-wrapper h1 {
-	margin-bottom: 3rem;
-	margin-left: 1rem;
+	margin-bottom: 1.5rem;
+	/* margin-left: 1rem; */
 }
 .project-card {
 	margin-top: 8rem;
@@ -107,6 +107,7 @@ a i {
 }
 /* New overlay on hover */
 .overlay-image .hover {
+	cursor: pointer;
 	position: absolute;
 	top: 0;
 	height: 100%;

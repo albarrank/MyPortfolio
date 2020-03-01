@@ -20,7 +20,7 @@ h1 {
 .portfolio-wrapper,
 .contact-wrapper {
 	height: 100%;
-	padding-top: 15rem;
+	padding-top: 10rem;
 	padding-bottom: 15rem;
 }
 .footer-wrapper {
@@ -53,11 +53,11 @@ h1 {
 	padding: 2rem;
 }
 .about-me > div > h1 {
-	padding-bottom: 5rem;
+	padding-bottom: 1.5rem;
 }
 .resume {
 	position: relative;
-	margin-top: 2rem;
+	/* margin-top: 2rem; */
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -90,7 +90,7 @@ h1 {
 }
 
 .skills > h1 {
-	padding-bottom: 5rem;
+	padding-bottom: 1.5rem;
 }
 
 .front {
@@ -125,5 +125,8 @@ h1 {
 @media (min-width: 1024px) and (max-width: 1440px) {
 	.contact-wrapper {
 		padding: 15rem;
+	}
+	body {
+		font-size: 1.2rem !important;
 	}
 }
