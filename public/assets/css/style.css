@@ -1,4 +1,5 @@
 body {
+	position: relative;
 	background-color: var(--main-bg-color);
 	font-family: "Montserrat", sans-serif;
 }
@@ -13,6 +14,9 @@ h1 {
 .main {
 	color: #ffffff;
 	height: 100vh;
+}
+p {
+	color: #ffffff !important;
 }
 
 /* General styling for sections */
@@ -122,11 +126,30 @@ h1 {
 	font-size: 64px;
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
-	.contact-wrapper {
-		padding: 15rem;
-	}
+@media (min-width: 768px) and (max-width: 2000px) {
+
 	body {
 		font-size: 1.2rem !important;
+	}
+	/* .mobile {
+		visibility: hidden;
+	}
+	.desktop {
+		visibility: visible;
+	} */
+}
+
+/* @media (min-width: 320px) and (max-width: 425px) {
+	.mobile {
+		visibility: visible;
+	}
+	.desktop {
+		visibility: hidden;
+	}
+} */
+
+@media (min-width: 1024px) {
+	.contact-wrapper {
+		padding: 15rem;
 	}
 }

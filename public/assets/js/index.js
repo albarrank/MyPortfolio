@@ -1,5 +1,5 @@
 $(document).ready(() => {
-	$(".nav-link").on("click", function() {
+	$(".mobile-link").on("click", function() {
 		$(".toggler").click();
 	});
 
